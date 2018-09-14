@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">meetandeat</string>
+    <string name="welcome">Searching for dinner while meeting new people?</string>
 </resources>

@@ -6,22 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
-        Button btn_continue = findViewById(R.id.btn_continue);
-        btn_continue.setOnClickListener(new View.OnClickListener() {
+        Button btn_host = findViewById(R.id.btn_host);
+        btn_host.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent startIntent = new Intent(getApplicationContext(),HomeActivity.class);
-            startActivity(startIntent);
+                Intent startIntent = new Intent(getApplicationContext(),CreateHEventActivity.class);
+                startActivity(startIntent);
             }
         });
-
-
     }
 }

@@ -13,4 +13,7 @@
 
     <!--Textfelder Texte Syn: "txt/txtInput_'Name des Textfelds'-->
     <string name="txtInput_search">Search</string>
+
+    <string name="description">description</string>
+    <string name="btn_continue_txt">CONTINUE</string>
 </resources>

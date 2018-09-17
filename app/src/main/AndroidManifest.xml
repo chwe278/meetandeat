@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ContinueActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".CreateHEventActivity" />
-        <activity android:name=".EventOverview"></activity>
+        <activity android:name=".CreateHostGuestActivity" />
+        <activity android:name=".CreateHostEventActivity" />
+        <activity android:name=".EventNewOverviewActivity"></activity>
     </application>
 
 </manifest>

@@ -17,7 +17,7 @@ public class ContinueActivity extends AppCompatActivity {
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent startIntent = new Intent(getApplicationContext(),EventNewOverviewActivity.class);
+            Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(startIntent);
             }
         });

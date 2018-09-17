@@ -18,8 +18,7 @@ public class CreateHostEventActivity extends AppCompatActivity {
         btn_Publish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Create Event in array or in sql
-                Intent startIntent = new Intent(getApplicationContext(),EventNewOverviewActivity.class);
+                Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(startIntent);
 
             }

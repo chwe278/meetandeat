@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CreateHostGuestActivity" />
         <activity android:name=".CreateHostEventActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CreateGuestEventActivity"></activity>
     </application>
 
 </manifest>

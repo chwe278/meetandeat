@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">meetandeat</string>
+    <string name="btn_host">Host</string>
+    <string name="btn_guest">Guest</string>
+    <string name="title_activity_create_hostguest1">Do you want to host an event</string>
+    <string name="title_activity_create_hostguest2">or</string>
+    <string name="title_activity_create_hostguest3">Do you have ingredients and want to be a guest?</string>
     <string name="welcome">Searching for dinner while meeting new people?</string>
     <string name="title_activity_create_host">CreateHostActivity</string>
     <string name="large_text">

@@ -39,8 +39,6 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
                         break;
                 }
             }
-
-
         }
 
 

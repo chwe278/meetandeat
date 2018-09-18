@@ -12,6 +12,7 @@
     <string name="textView_date">Date</string>
     <string name="textView_postcode">Postcode</string>
     <string name="textView_address">Address</string>
+    <string name="textView_city">City</string>
     <string name="textView_people">People</string>
     <string name="textView_title">Title</string>
     <string name="textView_dish">Dish</string>
@@ -23,6 +24,7 @@
     <string name="text_EventDate"></string>
     <string name="text_EventPostcode"></string>
     <string name="text_EventAddress"></string>
+    <string name="text_EventCity"></string>
     <string name="text_EventPeople"></string>
     <string name="text_EventTitle"></string>
     <string name="text_EventDish"></string>

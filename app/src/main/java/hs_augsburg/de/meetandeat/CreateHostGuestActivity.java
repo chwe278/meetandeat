@@ -16,8 +16,10 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
 
         Button btn_host = findViewById(R.id.btn_host);
         Button btn_guest = findViewById(R.id.btn_guest);
+        Button header = findViewById(R.id.header);
         btn_host.setOnClickListener(this);
         btn_guest.setOnClickListener(this);
+        header.setOnClickListener(this);
     }
 
             public void onClick(View view) {
@@ -30,6 +32,10 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
                     case R.id.btn_guest:
                         Intent startIntent2 = new Intent(getApplicationContext(), CreateGuestEventActivity.class);
                         startActivity(startIntent2);
+                        break;
+                    case R.id.header:
+                        Intent startIntent3 = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(startIntent3);
                         break;
                 }
             }

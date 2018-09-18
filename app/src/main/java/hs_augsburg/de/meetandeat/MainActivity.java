@@ -22,8 +22,5 @@ public class MainActivity extends AppCompatActivity {
                startActivity(newIntent);
            }
        });
-
-
-        //ciao leben
     }
 }

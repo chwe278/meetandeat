@@ -1,6 +1,5 @@
 package hs_augsburg.de.meetandeat;
 
-import java.sql.Date;
 import java.util.ArrayList;
 
 public class StartEvent {

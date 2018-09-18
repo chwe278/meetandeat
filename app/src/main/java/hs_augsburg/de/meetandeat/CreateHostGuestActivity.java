@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 public class CreateHostGuestActivity extends AppCompatActivity implements View.OnClickListener{
 
-    ArrayList<Event> eventList = new ArrayList<>();
-    int sortOfEvent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +32,10 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
 
                 switch (view.getId()) {
                     case R.id.btn_host:
-                        sortOfEvent = 1;
                         Intent startIntent = new Intent(getApplicationContext(), CreateHostEventActivity.class);
                         startActivity(startIntent);
                         break;
                     case R.id.btn_guest:
-                        sortOfEvent = 3;
                         Intent startIntent2 = new Intent(getApplicationContext(), CreateGuestEventActivity.class);
                         startActivity(startIntent2);
                         break;

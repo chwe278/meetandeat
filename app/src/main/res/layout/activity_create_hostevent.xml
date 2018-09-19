@@ -43,10 +43,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="@string/switch_picnic"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 tools:text="Picnic" />
 
             <LinearLayout
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -58,7 +59,7 @@
                     android:layout_weight="1"
                     android:text="@string/textView_date"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:text="Date" />
 
                 <EditText
@@ -67,8 +68,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="date"
-                    android:text="@string/text_EventDate"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,7 +82,7 @@
                     android:layout_weight="1"
                     android:text="@string/textView_postcode"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:text="Postcode" />
 
                 <EditText
@@ -92,7 +92,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:text="@string/text_EventPostcode"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -107,7 +107,7 @@
                     android:layout_weight="1"
                     android:text="@string/textView_city"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:text="City" />
 
                 <EditText
@@ -117,7 +117,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:text="@string/text_EventCity"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -127,11 +127,12 @@
 
                 <TextView
                     android:id="@+id/textView_address"
+                    android:layout_marginTop="14dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/textView_address"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:text="Address" />
 
 
@@ -142,7 +143,7 @@
                     android:ems="10"
                     android:inputType="textPostalAddress"
                     android:text="@string/text_EventAddress"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         <LinearLayout
@@ -155,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/textView_people"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -169,16 +170,17 @@
                 android:gravity="right"
                 android:inputType="number"
                 android:text="@string/text_EventPeople"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
             <TextView
                 android:id="@+id/textView_title"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/textView_title"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/text_EventTitle"
@@ -187,15 +189,16 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventTitle"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_dish"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/textView_dish"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/text_EventDish"
@@ -204,15 +207,16 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventDish"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_description"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/textView_description"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/text_EventDescription"
@@ -221,15 +225,16 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventDescription"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewTags"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/textView_tags"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/text_EventTags"
@@ -238,17 +243,19 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventTags"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/Te"
+                android:id="@+id/textViewIng"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/textView_mis_ing"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -259,10 +266,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Ingredient1"
+                    android:hint="@string/text_EventIngredient"
                     android:inputType="textPersonName"
-                    android:text="@string/text_EventIngredient"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/text_EventMass"
@@ -270,31 +276,35 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="mass"
-                    android:inputType="textPersonName"
-                    android:text="@string/text_EventMass"
-                    android:textSize="20sp" />
+                    android:hint="@string/text_EventMass"
+                    android:inputType="text"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/button_add_ingred"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_style"
                 android:text="@string/button_add_ingred"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="10sp"
-                android:textColor="@color/colorPrimary"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
 
             <Button
-                android:id="@+id/btn_Publish"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/btn_publish"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
                 android:background="@drawable/btn_style"
-                android:text="@string/btn_Publish"
-                android:textColor="@color/colorPrimary"/>
+                android:text="@string/btn_publish"
+                android:textColor="@color/colorPrimary" />
 
         </LinearLayout>
     </ScrollView>

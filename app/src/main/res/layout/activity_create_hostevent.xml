@@ -68,17 +68,19 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="date"
+                    android:background="@drawable/text_style"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/textView_postcode"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/textView_postcode"
                     android:textAppearance="@style/TextAppearance.AppCompat"
@@ -88,7 +90,8 @@
                 <EditText
                     android:id="@+id/text_EventPostcode"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_style"
                     android:ems="10"
                     android:inputType="number"
                     android:text="@string/text_EventPostcode"
@@ -96,9 +99,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
 
                 <TextView
                     android:id="@+id/textView_city"
@@ -117,6 +120,7 @@
                     android:ems="10"
                     android:inputType="text"
                     android:text="@string/text_EventCity"
+                    android:background="@drawable/text_style"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -139,7 +143,8 @@
                 <EditText
                     android:id="@+id/text_EventAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/text_style"
                     android:ems="10"
                     android:inputType="textPostalAddress"
                     android:text="@string/text_EventAddress"
@@ -147,6 +152,7 @@
             </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -170,6 +176,7 @@
                 android:gravity="right"
                 android:inputType="number"
                 android:text="@string/text_EventPeople"
+                android:background="@drawable/text_style"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -189,6 +196,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventTitle"
+                android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
             <TextView
@@ -207,6 +215,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventDish"
+                android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
             <TextView
@@ -225,6 +234,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventDescription"
+                android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
             <TextView
@@ -243,6 +253,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/text_EventTags"
+                android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
             <TextView
@@ -268,6 +279,7 @@
                     android:ems="10"
                     android:hint="@string/text_EventIngredient"
                     android:inputType="textPersonName"
+                    android:background="@drawable/text_style"
                     android:textSize="18sp" />
 
                 <EditText
@@ -278,6 +290,7 @@
                     android:ems="10"
                     android:hint="@string/text_EventMass"
                     android:inputType="text"
+                    android:background="@drawable/text_style"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -286,7 +299,6 @@
                 android:id="@+id/button_add_ingred"
                 android:layout_width="120dp"
                 android:layout_height="30dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_style"

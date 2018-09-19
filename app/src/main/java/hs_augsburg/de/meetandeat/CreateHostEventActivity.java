@@ -54,7 +54,7 @@ public class CreateHostEventActivity extends AppCompatActivity {
                 String s_missMass = missMass.getText().toString();
 
                 Cook ce = new Cook(s_postcode, s_city, s_description, s_tags, s_date, s_address, s_title, s_ppl_amount, s_dish, s_missIngredient, s_missMass);
-              //  se.hostEventList.add(ce);
+                se.getEventList().add(ce);
 
 
                 Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);

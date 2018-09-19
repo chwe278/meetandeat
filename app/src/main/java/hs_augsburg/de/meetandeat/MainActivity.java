@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        // listView_hostEvent = findViewById(R.id.listView_hostEvents);
 
 
+
         Button btn_new = findViewById(R.id.btn_new);
         ImageButton imgbtn_logo = findViewById(R.id.imgbtn_logo);
         ImageButton imgbtn_name = findViewById(R.id.imgbtn_name);

@@ -272,15 +272,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/btn_style"
                 android:text="@string/button_add_ingred"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimary"/>
 
             <Button
                 android:id="@+id/btn_Publish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_Publish" />
+                android:background="@drawable/btn_style"
+                android:text="@string/btn_Publish"
+                android:textColor="@color/colorPrimary"/>
 
         </LinearLayout>
     </ScrollView>

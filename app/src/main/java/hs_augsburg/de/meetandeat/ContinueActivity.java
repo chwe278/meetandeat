@@ -16,12 +16,10 @@ public class ContinueActivity extends AppCompatActivity {
         Button btn_continue = findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-            Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
+            public void onClick(View v) {
+            Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(startIntent);
             }
         });
-
-
     }
 }

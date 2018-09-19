@@ -21,7 +21,7 @@
     <string name="textView_mis_ing">Missing Ingredients</string>
 
     <!--activity_create_hostevent.xml TextInputs-->
-    <string name="text_EventDate"></string>
+
     <string name="text_EventPostcode"></string>
     <string name="text_EventAddress"></string>
     <string name="text_EventCity"></string>
@@ -30,19 +30,19 @@
     <string name="text_EventDish"></string>
     <string name="text_EventDescription"></string>
     <string name="text_EventTags"></string>
-    <string name="text_EventIngredient"></string>
-    <string name="text_EventMass"></string>
+    <string name="text_EventIngredient">Ingredient 1</string>
+    <string name="text_EventMass">Mass</string>
 
     <!--activity_create_hostevent.xml Switch-->
     <string name="switch_picnic">Picnic</string>
 
     <!--activity_create_hostevent.xml Buttons-->
     <string name="button_add_ingred">add more Ingredient</string>
-    <string name="btn_Publish">Publish</string>
+    <string name="btn_publish">PUBLISH</string>
 
 
     <!--Button Texte Syn: "btn_'name des  Button'_txt"-->
-    <string name="btn_new_txt">New</string>
+    <string name="btn_new_txt">NEW</string>
 
     <!--Textfelder Texte Syn: "txt/txtInput_'Name des Textfelds'-->
     <string name="txtInput_search">Search</string>

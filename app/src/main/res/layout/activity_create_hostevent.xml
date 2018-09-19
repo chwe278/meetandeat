@@ -67,7 +67,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="date"
-                    android:text="@string/text_EventDate"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -259,9 +258,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Ingredient1"
+                    android:hint="@string/text_EventIngredient"
                     android:inputType="textPersonName"
-                    android:text="@string/text_EventIngredient"
                     android:textSize="20sp" />
 
                 <EditText
@@ -270,31 +268,34 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="mass"
-                    android:inputType="textPersonName"
-                    android:text="@string/text_EventMass"
+                    android:hint="@string/text_EventMass"
+                    android:inputType="text"
                     android:textSize="20sp" />
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/button_add_ingred"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_style"
                 android:text="@string/button_add_ingred"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:textColor="@color/colorPrimary"/>
 
             <Button
-                android:id="@+id/btn_Publish"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/btn_publish"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
                 android:background="@drawable/btn_style"
-                android:text="@string/btn_Publish"
-                android:textColor="@color/colorPrimary"/>
+                android:text="@string/btn_publish"
+                android:textColor="@color/colorPrimary" />
 
         </LinearLayout>
     </ScrollView>

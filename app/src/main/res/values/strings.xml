@@ -22,14 +22,7 @@
 
     <!--activity_create_hostevent.xml TextInputs-->
 
-    <string name="text_EventPostcode"></string>
-    <string name="text_EventAddress"></string>
-    <string name="text_EventCity"></string>
-    <string name="text_EventPeople"></string>
-    <string name="text_EventTitle"></string>
-    <string name="text_EventDish"></string>
-    <string name="text_EventDescription"></string>
-    <string name="text_EventTags"></string>
+
     <string name="text_EventIngredient">Ingredient 1</string>
     <string name="text_EventMass">Mass</string>
 
@@ -45,7 +38,7 @@
     <string name="btn_new_txt">NEW</string>
 
     <!--Textfelder Texte Syn: "txt/txtInput_'Name des Textfelds'-->
-    <string name="txtInput_search">Search</string>
+    <string name="txtInput_search"> Search</string>
 
     <string name="description">description</string>
     <string name="btn_continue_txt">CONTINUE</string>

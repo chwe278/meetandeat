@@ -94,7 +94,6 @@
                     android:background="@drawable/text_style"
                     android:ems="10"
                     android:inputType="number"
-                    android:text="@string/text_EventPostcode"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -119,7 +118,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="text"
-                    android:text="@string/text_EventCity"
                     android:background="@drawable/text_style"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -147,7 +145,6 @@
                     android:background="@drawable/text_style"
                     android:ems="10"
                     android:inputType="textPostalAddress"
-                    android:text="@string/text_EventAddress"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -173,9 +170,8 @@
                 android:layout_width="62dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:gravity="right"
+                android:gravity="end"
                 android:inputType="number"
-                android:text="@string/text_EventPeople"
                 android:background="@drawable/text_style"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -195,7 +191,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/text_EventTitle"
                 android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
@@ -214,7 +209,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/text_EventDish"
                 android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
@@ -233,7 +227,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/text_EventDescription"
                 android:background="@drawable/text_style"
                 android:textSize="18sp" />
 
@@ -252,7 +245,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/text_EventTags"
                 android:background="@drawable/text_style"
                 android:textSize="18sp" />
 

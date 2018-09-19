@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import java.util.ArrayList;
 
 public class CreateHostGuestActivity extends AppCompatActivity implements View.OnClickListener{
+
 
 
     @Override
@@ -16,8 +20,12 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
 
         Button btn_host = findViewById(R.id.btn_host);
         Button btn_guest = findViewById(R.id.btn_guest);
+        ImageButton imgbtn_logo = findViewById(R.id.imgbtn_logo);
+        ImageButton imgbtn_name = findViewById(R.id.imgbtn_name);
         btn_host.setOnClickListener(this);
         btn_guest.setOnClickListener(this);
+        imgbtn_logo.setOnClickListener(this);
+        imgbtn_name.setOnClickListener(this);
     }
 
             public void onClick(View view) {
@@ -31,10 +39,16 @@ public class CreateHostGuestActivity extends AppCompatActivity implements View.O
                         Intent startIntent2 = new Intent(getApplicationContext(), CreateGuestEventActivity.class);
                         startActivity(startIntent2);
                         break;
+                    case R.id.imgbtn_logo:
+                        Intent startIntent3 = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(startIntent3);
+                        break;
+                    case R.id.imgbtn_name:
+                        Intent startIntent4 = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(startIntent4);
+                        break;
                 }
             }
-
-
         }
 
 

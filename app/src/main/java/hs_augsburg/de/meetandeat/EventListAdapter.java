@@ -13,7 +13,7 @@ public class EventListAdapter extends BaseAdapter {
     private Context mContext;
     private List<Cook> mCookList;
 
-    public EventListAdapter(Context mContext, List<Cook> mEventList) {
+    public EventListAdapter(Context mContext, List<Cook> mCookList) {
         this.mContext = mContext;
         this.mCookList = mCookList;
     }

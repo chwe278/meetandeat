@@ -2,7 +2,7 @@ package hs_augsburg.de.meetandeat;
 
 public class Guest extends Event {
 
-    String avaIngredients, avaMass;
+   private String avaIngredients, avaMass;
 
 
     public Guest (String postcode, String city, String description, String tags, String avaIngredients, String avaMass){
@@ -12,5 +12,19 @@ public class Guest extends Event {
 
     }
 
+    public String getAvaIngredients() {
+        return avaIngredients;
+    }
 
+    public String getAvaMass() {
+        return avaMass;
+    }
+
+    public void setAvaIngredients(String avaIngredients) {
+        this.avaIngredients = avaIngredients;
+    }
+
+    public void setAvaMass(String avaMass) {
+        this.avaMass = avaMass;
+    }
 }

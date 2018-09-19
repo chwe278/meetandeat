@@ -9,107 +9,122 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="345dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/text_style"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="281dp"
+            android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="34dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="30sp" />
+            android:textSize="26sp" />
 
         <TextView
-            android:id="@+id/people_bez"
-            android:layout_width="118dp"
-            android:layout_height="31dp"
+            android:id="@+id/dish_bez"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
             android:layout_alignStart="@+id/tv_title"
-            android:layout_below="@+id/location_bez"
-            android:text="@string/people_bez"
+            android:layout_alignLeft="@+id/tv_title"
+            android:text="@string/dish_bez"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/tv_dish"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/dish_bez"
+            android:layout_toRightOf="@+id/dish_bez"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/date_bez"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/dish_bez"
+            android:layout_alignLeft="@+id/dish_bez"
+            android:layout_below="@+id/dish_bez"
+            android:text="@string/date_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_dish"
+            android:layout_toEndOf="@+id/people_bez"
+            android:layout_toRightOf="@+id/date_bez"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/location_bez"
-            android:layout_width="118dp"
-            android:layout_height="31dp"
-            android:layout_alignStart="@+id/tv_title"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/date_bez"
+            android:layout_alignLeft="@+id/date_bez"
             android:layout_below="@+id/date_bez"
             android:text="@string/location_bez"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_dish"
-            android:layout_width="187dp"
-            android:layout_height="31dp"
-            android:layout_alignTop="@+id/tv_dish"
+            android:id="@+id/tv_postcode"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_date"
             android:layout_toEndOf="@+id/people_bez"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_date"
-            android:layout_width="187dp"
-            android:layout_height="31dp"
-            android:layout_below="@+id/tv_dish"
-            android:layout_toEndOf="@+id/people_bez"
+            android:layout_toRightOf="@+id/people_bez"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_city"
-            android:layout_width="113dp"
-            android:layout_height="31dp"
-            android:layout_above="@+id/people_bez"
+            android:layout_width="111dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_date"
             android:layout_toEndOf="@+id/tv_postcode"
+            android:layout_toRightOf="@id/tv_postcode"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_postcode"
-            android:layout_width="74dp"
-            android:layout_height="31dp"
-            android:layout_above="@+id/people_bez"
-            android:layout_toEndOf="@+id/people_bez"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_dish"
-            android:layout_width="118dp"
-            android:layout_height="31dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/tv_title"
-            android:layout_marginTop="98dp"
-            android:text="@string/dish_bez"
+            android:id="@+id/people_bez"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/location_bez"
+            android:layout_alignLeft="@+id/location_bez"
+            android:layout_below="@+id/location_bez"
+            android:text="@string/people_bez"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_people"
             android:layout_width="185dp"
-            android:layout_height="31dp"
-            android:layout_alignTop="@+id/people_bez"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_postcode"
             android:layout_toEndOf="@+id/people_bez"
+            android:layout_toRightOf="@id/people_bez"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
 
-        <TextView
-            android:id="@+id/date_bez"
-            android:layout_width="118dp"
-            android:layout_height="31dp"
-            android:layout_alignStart="@+id/tv_title"
-            android:layout_below="@+id/tv_dish"
-            android:text="@string/date_bez"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="15dp"/>
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

@@ -40,37 +40,36 @@ public class CreateHostEventActivity extends AppCompatActivity implements View.O
         imgbtn_name.setOnClickListener(this);
     }
 
-        public void onClick(View view) {
-            switch (view.getId()) {
-                case R.id.btn_publish:
-                    StartEvent se = new StartEvent();
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_publish:
 
-                    String s_postcode = postcode.getText().toString();
-                    String s_city = city.getText().toString();
-                    String s_description = description.getText().toString();
-                    String s_tags = tags.getText().toString();
-                    String s_date = date.getText().toString();
-                    String s_address = address.getText().toString();
-                    String s_title = title.getText().toString();
-                    String s_ppl_amount = ppl_amount.getText().toString();
-                    String s_dish = dish.getText().toString();
-                    String s_missIngredient = missIngredient.getText().toString();
-                    String s_missMass = missMass.getText().toString();
+                String s_postcode = postcode.getText().toString();
+                String s_city = city.getText().toString();
+                String s_description = description.getText().toString();
+                String s_tags = tags.getText().toString();
+                String s_date = date.getText().toString();
+                String s_address = address.getText().toString();
+                String s_title = title.getText().toString();
+                String s_ppl_amount = ppl_amount.getText().toString();
+                String s_dish = dish.getText().toString();
+                String s_missIngredient = missIngredient.getText().toString();
+                String s_missMass = missMass.getText().toString();
 
-                    Cook ce = new Cook(s_postcode, s_city, s_description, s_tags, s_date, s_address, s_title, s_ppl_amount, s_dish, s_missIngredient, s_missMass);
-                    se.getEventList().add(ce);
+                Cook ce = new Cook(s_postcode, s_city, s_description, s_tags, s_date, s_address, s_title, s_ppl_amount, s_dish, s_missIngredient, s_missMass);
+                MainActivity.mCookList.add(ce);
 
-                    Intent startIntent1 = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(startIntent1);
-                    break;
-                case R.id.imgbtn_logo:
-                    Intent startIntent2 = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(startIntent2);
-                    break;
-                case R.id.imgbtn_name:
-                    Intent startIntent3 = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(startIntent3);
-                    break;
-            }
+                Intent startIntent1 = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent1);
+                break;
+            case R.id.imgbtn_logo:
+                Intent startIntent2 = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent2);
+                break;
+            case R.id.imgbtn_name:
+                Intent startIntent3 = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent3);
+                break;
         }
+    }
 }

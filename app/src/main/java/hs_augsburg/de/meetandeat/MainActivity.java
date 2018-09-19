@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // ListView listView_hostEvent;
     private ListView lvCook;
     private EventListAdapter eAdapter;
-    private List<Cook> mCookList;
+    public static List<Cook> mCookList;
 
 
     @Override
@@ -26,11 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         lvCook = findViewById(R.id.lv_cook);
 
-        mCookList = new ArrayList<>();
+        //mCookList = new ArrayList<>();
 
-        mCookList.add(new Cook("86150", "Augsburg", "Nice swabian food and some beer", "#beer", "10.10.2018", "Maxstr.", "Swabian Evening", "4", "Kässpätzle", "Emmentaler", "500g"));
-        mCookList.add(new Cook("86637", "Wertingen", "Guades Vesper", "#brotzeit", "15.10.2018", "Kanalstr..", "Gemütliche Brotzeit", "2", "Brotzeit", "Brot", "1 Laib"));
-
+        if (mCookList == null) {
+            mCookList = new ArrayList<>();
+            mCookList.add(new Cook("86150", "Augsburg", "Nice swabian food and some beer", "#beer", "10.10.2018", "Maxstr.", "Swabian Evening", "4", "Kässpätzle", "Emmentaler", "500g"));
+            mCookList.add(new Cook("86637", "Wertingen", "Guades Vesper", "#brotzeit", "15.10.2018", "Kanalstr..", "Gemütliche Brotzeit", "2", "Brotzeit", "Brot", "1 Laib"));
+        }
         eAdapter = new EventListAdapter(getApplicationContext(), mCookList);
         lvCook.setAdapter(eAdapter);
 

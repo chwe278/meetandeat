@@ -49,4 +49,10 @@
 
     <string name="description">description</string>
     <string name="btn_continue_txt">CONTINUE</string>
+
+
+    <string name="dish_bez">Dish:</string>
+    <string name="date_bez">Date:</string>
+    <string name="location_bez">Location:</string>
+    <string name="people_bez">People:</string>
 </resources>

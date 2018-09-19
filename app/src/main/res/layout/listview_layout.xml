@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="258dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/people_bez"
+            android:layout_width="118dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_below="@+id/location_bez"
+            android:text="@string/people_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location_bez"
+            android:layout_width="118dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_below="@+id/date_bez"
+            android:text="@string/location_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dish"
+            android:layout_width="187dp"
+            android:layout_height="31dp"
+            android:layout_alignTop="@+id/tv_dish"
+            android:layout_toEndOf="@+id/people_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="187dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/tv_dish"
+            android:layout_toEndOf="@+id/people_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="113dp"
+            android:layout_height="31dp"
+            android:layout_above="@+id/people_bez"
+            android:layout_toEndOf="@+id/tv_postcode"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_postcode"
+            android:layout_width="74dp"
+            android:layout_height="31dp"
+            android:layout_above="@+id/people_bez"
+            android:layout_toEndOf="@+id/people_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dish"
+            android:layout_width="118dp"
+            android:layout_height="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_marginTop="98dp"
+            android:text="@string/dish_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_people"
+            android:layout_width="185dp"
+            android:layout_height="31dp"
+            android:layout_alignTop="@+id/people_bez"
+            android:layout_toEndOf="@+id/people_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_bez"
+            android:layout_width="118dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_below="@+id/tv_dish"
+            android:text="@string/date_bez"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

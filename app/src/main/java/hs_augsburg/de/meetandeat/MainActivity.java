@@ -11,9 +11,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-   // ListView listView_hostEvent;
+    // ListView listView_hostEvent;
     private ListView lvCook;
     private EventListAdapter eAdapter;
     private List<Cook> mCookList;
@@ -24,15 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       lvCook = (ListView)findViewById(R.id.lv_cook);
+        lvCook = findViewById(R.id.lv_cook);
 
-       mCookList = new ArrayList<>();
+        mCookList = new ArrayList<>();
 
-       mCookList.add(new Cook("86150", "Augsburg", "Nice swabian food and some beer", "#beer", "10.10.2018", "Maxstr.", "Swabian Evening", "4", "Kässpätzle", "Emmentaler", "500g"));
-       mCookList.add(new Cook("86637", "Wertingen", "Guades Vesper", "#brotzeit", "15.10.2018", "Kanalstr..", "Gemütliche Brotzeit", "2", "Brotzeit", "Brot", "1 Laib"));
+        mCookList.add(new Cook("86150", "Augsburg", "Nice swabian food and some beer", "#beer", "10.10.2018", "Maxstr.", "Swabian Evening", "4", "Kässpätzle", "Emmentaler", "500g"));
+        mCookList.add(new Cook("86637", "Wertingen", "Guades Vesper", "#brotzeit", "15.10.2018", "Kanalstr..", "Gemütliche Brotzeit", "2", "Brotzeit", "Brot", "1 Laib"));
 
-       eAdapter = new EventListAdapter(getApplicationContext(), mCookList);
-       lvCook.setAdapter(eAdapter);
+        eAdapter = new EventListAdapter(getApplicationContext(), mCookList);
+        lvCook.setAdapter(eAdapter);
 
         Button btn_new = findViewById(R.id.btn_new);
         ImageButton imgbtn_logo = findViewById(R.id.imgbtn_logo);
@@ -42,22 +42,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imgbtn_name.setOnClickListener(this);
     }
 
-        public void onClick(View view){
+    public void onClick(View view) {
 
-            switch (view.getId()) {
-                case R.id.imgbtn_logo:
-                    Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(startIntent);
-                    break;
-                case R.id.imgbtn_name:
-                    Intent startIntent2 = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(startIntent2);
-                    break;
-                case R.id.btn_new:
-                    Intent startIntent3 = new Intent(getApplicationContext(), CreateHostGuestActivity.class);
-                    startActivity(startIntent3);
-                    break;
+        switch (view.getId()) {
+            case R.id.imgbtn_logo:
+                Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent);
+                break;
+            case R.id.imgbtn_name:
+                Intent startIntent2 = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent2);
+                break;
+            case R.id.btn_new:
+                Intent startIntent3 = new Intent(getApplicationContext(), CreateHostGuestActivity.class);
+                startActivity(startIntent3);
+                break;
 
-            }
         }
     }
+}

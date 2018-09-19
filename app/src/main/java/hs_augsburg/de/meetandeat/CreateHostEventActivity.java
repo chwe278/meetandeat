@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class CreateHostEventActivity extends AppCompatActivity {
 
-    ArrayList<Event> hostEventList;
+
     EditText postcode, city, description, tags, date, address, title, ppl_amount, dish, missIngredient, missMass;
 
     @Override
@@ -39,7 +39,7 @@ public class CreateHostEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                hostEventList = new ArrayList<>();
+                StartEvent se = new StartEvent();
 
                 String s_postcode = postcode.getText().toString();
                 String s_city = city.getText().toString();
@@ -54,7 +54,7 @@ public class CreateHostEventActivity extends AppCompatActivity {
                 String s_missMass = missMass.getText().toString();
 
                 Cook ce = new Cook(s_postcode, s_city, s_description, s_tags, s_date, s_address, s_title, s_ppl_amount, s_dish, s_missIngredient, s_missMass);
-                hostEventList.add(ce);
+                se.getEventList().add(ce);
 
 
                 Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);

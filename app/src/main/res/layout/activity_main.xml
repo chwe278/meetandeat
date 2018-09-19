@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btn_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
         android:background="@color/colorPrimary"
         android:text="@string/btn_new_txt"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +36,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/txtInput_search"
@@ -34,4 +44,11 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/btn_new"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:layout_width="368dp"
+        android:layout_height="403dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="156dp" />
+
 </android.support.constraint.ConstraintLayout>

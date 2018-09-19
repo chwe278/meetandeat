@@ -8,9 +8,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
    // ListView listView_hostEvent;
+    private ListView lvCook;
+    private EventListAdapter eAdapter;
+    private List<Cook> mCookList;
 
 
     @Override
@@ -18,9 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // listView_hostEvent = findViewById(R.id.listView_hostEvents);
+       lvCook = (ListView)findViewById(R.id.lv_cook);
 
+       mCookList = new ArrayList<>();
 
+       mCookList.add(new Cook("86150", "Augsburg", "Nice swabian food and some beer", "#beer", "10.10.2018", "Maxstr.", "Swabian Evening", "4", "Kässpätzle", "Emmentaler", "500g"));
+       mCookList.add(new Cook("86637", "Wertingen", "Guades Vesper", "#brotzeit", "15.10.2018", "Kanalstr..", "Gemütliche Brotzeit", "2", "Brotzeit", "Brot", "1 Laib"));
+
+       eAdapter = new EventListAdapter(getApplicationContext(), mCookList);
+       lvCook.setAdapter(eAdapter);
 
         Button btn_new = findViewById(R.id.btn_new);
         ImageButton imgbtn_logo = findViewById(R.id.imgbtn_logo);

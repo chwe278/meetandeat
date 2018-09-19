@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    ListView listView_hostEvent;
+   // ListView listView_hostEvent;
 
 
     @Override
@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //listView_hostEvent = findViewById(R.id.)
+       // listView_hostEvent = findViewById(R.id.listView_hostEvents);
+
 
         Button btn_new = findViewById(R.id.btn_new);
         ImageButton imgbtn_logo = findViewById(R.id.imgbtn_logo);

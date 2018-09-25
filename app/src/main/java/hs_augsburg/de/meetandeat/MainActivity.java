@@ -13,7 +13,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    // ListView listView_hostEvent;
     private ListView lvCook;
     private EventListAdapter eAdapter;
     public static List<Cook> mCookList;
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         lvCook = findViewById(R.id.lv_cook);
 
-        //mCookList = new ArrayList<>();
 
         if (mCookList == null) {
             mCookList = new ArrayList<>();
